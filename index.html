@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTY</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container nav-centered">
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">首页</a></li>
+                <li><a href="#about" class="nav-link">关于我</a></li>
+                <li><a href="#resume" class="nav-link">简历</a></li>
+                <li><a href="#contact" class="nav-link">联系</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页 -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="avatar-container">
+                    <img src="aatar.jpg" alt="个人头像" class="avatar">
+                </div>
+                <h1 class="hero-title">你好，我是 <span class="highlight">NTY</span></h1>
+                <p class="hero-tagline">热爱编程，追求极致用户体验的网站开发者</p>
+                <div class="skills-icons">
+                    <div class="skill-item" title="HTML5">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skill-item" title="CSS3">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="skill-item" title="JavaScript">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-item" title="React">
+                        <i class="fab fa-react"></i>
+                        <span>React</span>
+                    </div>
+                    <div class="skill-item" title="Vue.js">
+                        <i class="fab fa-vuejs"></i>
+                        <span>Vue.js</span>
+                    </div>
+                    <div class="skill-item" title="Node.js">
+                        <i class="fab fa-node-js"></i>
+                        <span>Node.js</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-content">
+                <div class="about-intro">
+                    <h3>个人介绍</h3>
+                    <p>我是一名充满热情的网站开发工程师，拥有3年的Web开发经验。专注于创建高性能、用户友好的Web应用程序。我相信好的代码不仅要能运行，还要易于维护和扩展。</p>
+                    <p>在工作中，我注重团队协作，善于沟通，能够快速适应新技术和新环境。业余时间我喜欢探索新技术，参与开源项目，并分享技术心得。</p>
+                </div>
+                <div class="about-details">
+                    <div class="about-card">
+                        <h3><i class="fas fa-graduation-cap"></i> 学习经历</h3>
+                        <ul class="timeline">
+                            <li>
+                                <span class="year">2023 - 2026</span>
+                                <span class="school">软件技术</span>
+                                <p>期间系统学习了计算机基础知识，参与了项目开发</p>
+                            </li>
+                            <li class="expandable-item">
+                                <div class="expandable-header" onclick="toggleExpand(this)">
+                                    <span class="year">2025 - 2026</span>
+                                    <span class="school">Crimson Desert 红色沙漠游戏攻略网站</span>
+                                    <i class="fas fa-chevron-down expand-icon"></i>
+                                </div>
+                                <div class="expandable-content">
+                                    <p class="project-subtitle">前端开发 | 独立项目</p>
+                                    <p>基于原生HTML/CSS/JavaScript开发的响应式游戏攻略网站，为《Crimson Desert》玩家提供完整的游戏指南、交互式地图、角色build推荐和装备数据库。网站采用暗色主题设计，针对Google海外SEO优化，支持PC端和移动端双端适配。</p>
+                                    <div class="project-details">
+                                        <p><strong>前端架构：</strong>使用原生HTML5、CSS3、ES6+ JavaScript构建，无框架依赖，代码轻量高效</p>
+                                        <p><strong>响应式设计：</strong>通过CSS Media Query实现PC/平板/手机三端适配，使用Flexbox和Grid布局确保各屏幕尺寸下的完美显示</p>
+                                        <p><strong>交互式地图系统：</strong>基于SVG矢量图形绘制6张游戏区域地图，实现地图标记点交互、悬停提示、模态框展示等功能</p>
+                                        <p><strong>实时搜索功能：</strong>实现站内内容搜索引擎，支持按标题和分类模糊匹配，结果实时展示</p>
+                                        <p><strong>访客统计系统：</strong>使用localStorage实现本地访客计数，仅首页访问时计数，避免重复统计</p>
+                                        <p><strong>技术亮点：</strong>纯前端实现，零后端依赖，可部署于任何静态托管平台（GitHub Pages/Vercel等）；使用CSS变量和渐变实现统一的暗色主题视觉风格；模块化的JavaScript代码结构，便于功能扩展和维护；完整的移动端触控优化，支持手势操作和流畅滚动</p>
+                                        <p><strong>项目成果：</strong>完成5个核心页面（首页、攻略、角色、地图、装备）的开发；实现6张交互式SVG游戏地图，标记点涵盖任务、副本、宝藏、BOSS等关键位置；网站结构清晰，代码规范，具备完整的用户体验</p>
+                                        <a href="https://c5h2y0.github.io/gl/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> 访问项目</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="about-card">
+                        <h3><i class="fas fa-code"></i> 掌握技术</h3>
+                        <div class="tech-tags">
+                            <span class="tag">HTML5/CSS3</span>
+                            <span class="tag">JavaScript/ES6+</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">React/Vue</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">MySQL/MongoDB</span>
+                            <span class="tag">Git</span>
+                            <span class="tag">Docker</span>
+                        </div>
+                    </div>
+                    <div class="about-card">
+                        <h3><i class="fas fa-heart"></i> 兴趣爱好</h3>
+                        <div class="hobbies">
+                            <div class="hobby-item">
+                                <i class="fas fa-book"></i>
+                                <span>打球</span>
+                            </div>
+                            <div class="hobby-item">
+                                <i class="fas fa-camera"></i>
+                                <span>摄影</span>
+                            </div>
+                            <div class="hobby-item">
+                                <i class="fas fa-running"></i>
+                                <span>跑步</span>
+                            </div>
+                            <div class="hobby-item">
+                                <i class="fas fa-gamepad"></i>
+                                <span>游戏</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 简历页 -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <h2 class="section-title">我的简历</h2>
+
+            <div class="resume-content" id="resumeContent">
+                <div class="resume-header">
+                    <div class="resume-avatar">
+                        <img src="aatar.jpg" alt="头像">
+                    </div>
+                    <div class="resume-info">
+                        <h1>罗宝堂</h1>
+                        <p class="resume-title">软件技术专业学生</p>
+                        <div class="resume-contact">
+                            <span><i class="fas fa-phone"></i> 19830424489</span>
+                            <span><i class="fas fa-envelope"></i> 3125935873@qq.com</span>
+                            <span><i class="fas fa-map-marker-alt"></i> 广西贵港</span>
+                            <span><i class="fas fa-link"></i> <a href="https://chylbt.cn" target="_blank">主页链接: chylbt.cn</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-summary">
+                    <p>软件技术专业，主攻前端开发方向，系统学习HTML、CSS等前端核心基础知识，熟练实现PC端与移动端双端自适应页面布局，可根据设计稿完成切图、页面还原与静态官网开发。擅长借助AI开发工具优化编码效率，自主完成多套网页实战案例，养成规范的代码编写习惯；具备优秀自主学习能力，遇到技术难题能够自主查阅官方文档排查解决，做事细心稳重、执行力强，拥有良好沟通与团队配合意识，希望通过前端实习岗位参与真实项目落地，在实战中精进技术。</p>
+                </div>
+                <div class="resume-body">
+                    <div class="resume-left">
+                        <div class="resume-section">
+                            <h3><i class="fas fa-graduation-cap"></i> 教育经历</h3>
+                            <div class="resume-item">
+                                <h4>广西制造工程职业技术学院</h4>
+                                <span class="resume-date">2023.09 - 2026.06</span>
+                                <p>软件技术 | 大专</p>
+                            </div>
+                        </div>
+                        <div class="resume-section">
+                            <h3><i class="fas fa-layer-group"></i> 技能分类</h3>
+                            <div class="skill-category">
+                                <h4>前端技术</h4>
+                                <div class="skill-tags">
+                                    <span class="tag">HTML5</span>
+                                    <span class="tag">CSS3</span>
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">ES6+</span>
+                                    <span class="tag">Flexbox</span>
+                                    <span class="tag">Grid</span>
+                                    <span class="tag">SVG</span>
+                                    <span class="tag">响应式设计</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>工具与平台</h4>
+                                <div class="skill-tags">
+                                    <span class="tag">GitHub Pages</span>
+                                    <span class="tag">Vercel</span>
+                                    <span class="tag">AI开发工具</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>行业与业务</h4>
+                                <div class="skill-tags">
+                                    <span class="tag">SEO优化</span>
+                                    <span class="tag">游戏攻略网站</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/C5H2Y0" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub：https://github.com/C5H2Y0</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resume-right">
+                        <div class="resume-section">
+                            <h3><i class="fas fa-tools"></i> 技能专长</h3>
+                            <div class="skill-bar">
+                                <span>HTML/CSS/JavaScript</span>
+                                <div class="progress"><div class="progress-fill" style="width: 90%"></div></div>
+                            </div>
+                            <div class="skill-bar">
+                                <span>响应式设计/Flexbox/Grid</span>
+                                <div class="progress"><div class="progress-fill" style="width: 85%"></div></div>
+                            </div>
+                            <div class="skill-bar">
+                                <span>SVG矢量图形</span>
+                                <div class="progress"><div class="progress-fill" style="width: 80%"></div></div>
+                            </div>
+                            <div class="skill-bar">
+                                <span>ES6+ / 模块化开发</span>
+                                <div class="progress"><div class="progress-fill" style="width: 75%"></div></div>
+                            </div>
+                        </div>
+                        <div class="resume-section">
+                            <h3><i class="fas fa-project-diagram"></i> 项目经历</h3>
+                            <div class="resume-item expandable-resume-item">
+                                <div class="resume-item-header" onclick="toggleResumeExpand(this)">
+                                    <h4>Crimson Desert 红色沙漠游戏攻略网站</h4>
+                                    <p class="project-role">前端开发 | 独立项目</p>
+                                    <i class="fas fa-chevron-down resume-expand-icon"></i>
+                                </div>
+                                <div class="resume-item-content">
+                                    <p>基于原生HTML/CSS/JavaScript开发的响应式游戏攻略网站，为《Crimson Desert》玩家提供完整的游戏指南、交互式地图、角色build推荐和装备数据库。网站采用暗色主题设计，针对Google海外SEO优化，支持PC端和移动端双端适配。</p>
+                                    <ul>
+                                        <li><strong>前端架构：</strong>使用原生HTML5、CSS3、ES6+ JavaScript构建，无框架依赖，代码轻量高效</li>
+                                        <li><strong>响应式设计：</strong>通过CSS Media Query实现PC/平板/手机三端适配，使用Flexbox和Grid布局确保各屏幕尺寸下的完美显示</li>
+                                        <li><strong>交互式地图系统：</strong>基于SVG矢量图形绘制6张游戏区域地图，实现地图标记点交互、悬停提示、模态框展示等功能</li>
+                                        <li><strong>实时搜索功能：</strong>实现站内内容搜索引擎，支持按标题和分类模糊匹配，结果实时展示</li>
+                                        <li><strong>访客统计系统：</strong>使用localStorage实现本地访客计数，仅首页访问时计数，避免重复统计</li>
+                                        <li><strong>技术亮点：</strong>纯前端实现，零后端依赖，可部署于任何静态托管平台（GitHub Pages/Vercel等）；使用CSS变量和渐变实现统一的暗色主题视觉风格；模块化的JavaScript代码结构，便于功能扩展和维护；完整的移动端触控优化，支持手势操作和流畅滚动</li>
+                                        <li><strong>项目成果：</strong>完成5个核心页面（首页、攻略、角色、地图、装备）的开发；实现6张交互式SVG游戏地图，标记点涵盖任务、副本、宝藏、BOSS等关键位置；网站结构清晰，代码规范，具备完整的用户体验</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系页 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">联系我</h2>
+            <div class="contact-content contact-centered">
+                <div class="contact-form">
+                    <h3>给我留言</h3>
+                    <div class="contact-email">
+                        <i class="fas fa-envelope"></i>
+                        <span>3125935873@qq.com</span>
+                    </div>
+                    <form id="messageForm">
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="您的邮箱" required>
+                            <span class="error-msg" id="emailError"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="留言内容" required></textarea>
+                            <span class="error-msg" id="messageError"></span>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> 发送留言
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>NTY</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
